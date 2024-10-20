@@ -70,9 +70,16 @@
             </div>
         </section>
         <section class="flex flex-col items-center justify-center">
-            <h2 class="flex flex-col items-center text-center font-bold text-3xl md:text-5xl mb-6">Designed for the full
-                journey</h2>
-            <ul class="text-[#37424D] flex flex-col gap-2 text-xl items-center">
+            <h2 class="flex flex-col items-center text-center font-bold text-3xl md:text-5xl mb-6">
+                <span class="flex relative">
+                    Designed
+                    <svg width="38" height="38" class="absolute bottom-[70%] left-[110%]">
+                        <use xlink:href="./src/img/icons.svg#icon-designer"></use>
+                    </svg>
+                </span>
+                 for the full journey
+            </h2>
+            <ul class="text-[#37424D] flex flex-col gap-2 text-xl items-center font-bold">
                 <li class="hover:text-accent cursor-pointer duration-300">Organisation design</li>
                 <li class="hover:text-accent cursor-pointer duration-300">Smart contract development</li>
                 <li class="hover:text-accent cursor-pointer duration-300">Fundraising</li>
@@ -82,47 +89,129 @@
                 <li class="hover:text-accent cursor-pointer duration-300">DAO operations</li>
             </ul>
         </section>
-        <section>
-            <h2>All the tools in one app</h2>
-            <ul>
-                <li>NFT membership</li>
-                <li>Member directory</li>
-                <li>Treasury</li>
-                <li>Feed</li>
-                <li>Governance</li>
-                <li>App store</li>
+        <section class="flex flex-col items-center justify-center">
+            <h2 class="flex flex-col items-center text-center font-bold text-3xl md:text-5xl mb-6">
+                <span class="flex relative">
+                    <svg width="38" height="38" class="absolute -top-[90%] right-[100%]">
+                        <use xlink:href="./src/img/icons.svg#icon-tools"></use>
+                    </svg>
+                    All the tools
+                </span>
+                 in one app
+            </h2>
+            <ul class="flex flex-wrap text-[#8395A7] mb-6 font-semibold items-center justify-center">
+                <li class="hover:text-[#FFC803] duration-300 relative after:content-['·'] after:mx-2 last:after:content-['']">
+                    NFT membership
+                </li>
+                <li class="hover:text-[#FFC803] duration-300 relative after:content-['·'] after:mx-2 last:after:content-['']">
+                    Member directory
+                </li>
+                <li class="hover:text-[#FFC803] duration-300 relative after:content-['·'] after:mx-2 last:after:content-['']">
+                    Treasury
+                </li>
+                <li class="hover:text-[#FFC803] duration-300 relative after:content-['·'] after:mx-2 last:after:content-['']">
+                    Feed
+                </li>
+                <li class="hover:text-[#FFC803] duration-300 relative after:content-['·'] after:mx-2 last:after:content-['']">
+                    Governance
+                </li>
+                <li class="hover:text-[#FFC803] duration-300 relative">
+                    App store
+                </li>
             </ul>
-            <img src="" alt="">
-            <button> ++ Watch video</button>
+            <img src="./src/img/tools.jpg" alt="" class="mb-6">
+            <button class="flex items-center justify-center gap-2 p-4 bg-[#FFCF01]/15 rounded-lg text-[#FFCF01] font-bold text-xl hover:bg-[#FFCF01]/30 duration-300"> 
+                <svg width="24" height="24" class="">
+                    <use xlink:href="./src/img/icons.svg#icon-play"></use>
+                </svg> 
+                <span>Watch video</span>
+            </button>
         </section>
-        <section>
-            <h2>Works with ++</h2>
-            <ul>
-                <li>Ethereum</li>
-                <li>Polygon</li>
-                <li>Gnosis Safe</li>
-                <li>Snapshot</li>
-                <li>ENS</li>
-                <li>OpenSea</li>
+        <section class="flex flex-col items-center justify-center">
+            <h2 class="flex flex-col items-center text-center font-bold text-3xl md:text-5xl mb-6">
+                <span class="flex relative">
+                    <svg width="38" height="38" class="absolute bottom-[70%] left-[110%]">
+                        <use xlink:href="./src/img/icons.svg#icon-works"></use>
+                    </svg>
+                    Works with
+                </span>
+            </h2>
+            <ul class="grid grid-cols-3 gap-5 font-semibold text-xs">
+                <li class="flex flex-col items-center gap-3"> 
+                    <div class="p-6 rounded-[20px] bg-[#2A3744]">
+                        <svg width="36" height="37" class="">
+                            <use xlink:href="./src/img/icons.svg#icon-ethereum"></use>
+                        </svg>
+                    </div>
+                    Ethereum</li>
+                <li class="flex flex-col items-center gap-3"> 
+                    <div class="p-6 rounded-[20px] bg-[#2A3744]">
+                        <svg width="38" height="37" class="">
+                            <use xlink:href="./src/img/icons.svg#icon-polygon"></use>
+                        </svg>
+                    </div>
+                    Polygon</li>
+                <li class="flex flex-col items-center gap-3"> 
+                    <div class="p-6 rounded-[20px] bg-[#2A3744]">
+                        <svg width="36" height="37" class="">
+                            <use xlink:href="./src/img/icons.svg#icon-gnosis"></use>
+                        </svg>
+                    </div>
+                    Gnosis Safe</li>
+                <li class="flex flex-col items-center gap-3"> 
+                    <div class="p-6 rounded-[20px] bg-[#2A3744]">
+                        <div class="p-2 rounded-full bg-[#FFCC4A]">
+                            <svg width="20" height="20" class="">
+                                <use xlink:href="./src/img/icons.svg#icon-snapshot"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    Snapshot</li>
+                <li class="flex flex-col items-center gap-3"> 
+                    <div class="p-6 rounded-[20px] bg-[#2A3744]">
+                        <div class="p-2 rounded-full bg-[#4ACEF7]">
+                            <svg width="24" height="24" class="">
+                                <use xlink:href="./src/img/icons.svg#icon-ens"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    ENS</li>
+                <li class="flex flex-col items-center gap-3"> 
+                    <div class="p-6 rounded-[20px] bg-[#2A3744]">
+                        <div class="p-2 rounded-full bg-[#2081E2]">
+                            <svg width="23" height="23" class="">
+                                <use xlink:href="./src/img/icons.svg#icon-opensea"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    OpenSea</li>
             </ul>
         </section>
-        <section>
-            <h2>Help at every step</h2>
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
+        <section class="flex flex-col items-center justify-center">
+            <h2 class="flex flex-col items-center text-center font-bold text-3xl md:text-5xl mb-6">Help at every step</h2>
+            <ul class="flex flex-wrap gap-3 items-center justify-center mb-6">
+                <li class="rounded-[15px] overflow-hidden"><img src="./src/img/people/1.jpg" alt=""></li>
+                <li class="rounded-[15px] overflow-hidden"><img src="./src/img/people/2.jpg" alt=""></li>
+                <li class="rounded-[15px] overflow-hidden"><img src="./src/img/people/3.jpg" alt=""></li>
+                <li class="rounded-[15px] overflow-hidden"><img src="./src/img/people/4.jpg" alt=""></li>
+                <li class="rounded-[15px] overflow-hidden"><img src="./src/img/people/5.jpg" alt=""></li>
             </ul>
-        </section>
-        <section>
-            <p>Success managers +
-                Knowledge base + Chat support
-                Tutorials +
-                Templates + Smart Contract development
-                Events + Education +Guides
-            </p>
+            <ul class="flex flex-wrap items-center justify-center gap-2 font-bold text-lg">
+                <li>Success managers</li>
+                <li class="flex items-center gap-2"><svg width="13" height="13" class="stroke-[#4BE1F4] fill-[#4BE1F4]">
+                    <use xlink:href="./src/img/icons.svg#icon-star"></use>
+                </svg>Tutorials Chat support</li>
+                <li class="flex items-center gap-2"><svg width="13" height="13" class="stroke-[#A36FFE] fill-[#A36FFE]">
+                    <use xlink:href="./src/img/icons.svg#icon-star"></use>
+                </svg>Knowledge base Templates</li>
+                <li class="flex items-center gap-2"><svg width="13" height="13" class="stroke-[#C8D316] fill-[#C8D316]">
+                    <use xlink:href="./src/img/icons.svg#icon-star"></use>
+                </svg>Events Smart Contract development</li>
+                <li>Education</li>
+                <li class="flex items-center gap-2"><svg width="13" height="13" class="stroke-[#FF8135] fill-[#FF8135]">
+                    <use xlink:href="./src/img/icons.svg#icon-star"></use>
+                </svg>Guides</li>
+            </ul>
         </section>
         <section>
             <h2>Weekly digest</h2>
