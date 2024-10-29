@@ -634,6 +634,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-11 {
   margin-bottom: 2.75rem;
 }
@@ -841,9 +846,21 @@ video {
   background-color: rgb(74 206 247 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#7795FF\]\/15 {
+  background-color: rgb(119 149 255 / 0.15);
+}
+
 .bg-\[\#77E6FF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(119 230 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#77E6FF\]\/15 {
+  background-color: rgb(119 230 255 / 0.15);
+}
+
+.bg-\[\#9277FF\]\/15 {
+  background-color: rgb(146 119 255 / 0.15);
 }
 
 .bg-\[\#DBE268\] {
@@ -854,6 +871,10 @@ video {
 .bg-\[\#E2C1F9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(226 193 249 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F78787\]\/15 {
+  background-color: rgb(247 135 135 / 0.15);
 }
 
 .bg-\[\#FFC803\] {
@@ -907,6 +928,10 @@ video {
 
 .fill-blue-200 {
   fill: #bfdbfe;
+}
+
+.fill-transparent {
+  fill: transparent;
 }
 
 .stroke-\[\#4BE1F4\] {
@@ -1189,8 +1214,7 @@ video {
 @font-face {
   font-family: 'LoosWide';
 
-  src: url('/src/fonts/fonnts.com-Loos_Wide_Thin.woff2') format('woff2'),
-        url('/src/fonts/fonnts.com-Loos_Wide_Thin.woff') format('woff');
+  src: url('/src/fonts/fonnts.com-Loos_Wide_Thin.otf') format('opentype');
 
   font-weight: 100;
 
@@ -1200,8 +1224,7 @@ video {
 @font-face {
   font-family: 'LoosWide';
 
-  src: url('/src/fonts/fonnts.com-Loos_Wide_Light.woff2') format('woff2'),
-        url('/src/fonts/fonnts.com-Loos_Wide_Light.woff') format('woff');
+  src: url('/src/fonts/fonnts.com-Loos_Wide_Light.otf') format('opentype');
 
   font-weight: 300;
 
@@ -1211,8 +1234,7 @@ video {
 @font-face {
   font-family: 'LoosWide';
 
-  src: url('/src/fonts/fonnts.com-Loos_Wide_Regular.woff2') format('woff2'),
-        url('/src/fonts/fonnts.com-Loos_Wide_Regular.woff') format('woff');
+  src: url('/src/fonts/fonnts.com-Loos_Wide_Regular.otf') format('opentype');
 
   font-weight: 400;
 
@@ -1222,8 +1244,7 @@ video {
 @font-face {
   font-family: 'LoosWide';
 
-  src: url('/src/fonts/fonnts.com-Loos_Wide_Bold.woff2') format('woff2'),
-        url('/src/fonts/fonnts.com-Loos_Wide_Bold.woff') format('woff');
+  src: url('/src/fonts/fonnts.com-Loos_Wide_Bold.otf') format('opentype');
 
   font-weight: 700;
 
@@ -1233,8 +1254,7 @@ video {
 @font-face {
   font-family: 'LoosWide';
 
-  src: url('/src/fonts/fonnts.com-Loos_Wide_Black.woff2') format('woff2'),
-        url('/src/fonts/fonnts.com-Loos_Wide_Black.woff') format('woff');
+  src: url('/src/fonts/fonnts.com-Loos_Wide_Black.otf') format('opentype');
 
   font-weight: 900;
 
@@ -1242,7 +1262,7 @@ video {
 }
 
 body {
-  font-family: 'loosWide';
+  font-family: 'LoosWide';
 }
 
 .after\:mx-2::after {
@@ -1270,6 +1290,27 @@ body {
   background-color: rgb(255 168 0 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#77E6FF\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(119 230 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#77E6FF\]\/20:hover {
+  background-color: rgb(119 230 255 / 0.2);
+}
+
+.hover\:bg-\[\#7795FF\]\/20:hover {
+  background-color: rgb(119 149 255 / 0.2);
+}
+
+.hover\:bg-\[\#9277FF\]\/20:hover {
+  background-color: rgb(146 119 255 / 0.2);
+}
+
+.hover\:bg-\[\#F78787\]\/20:hover {
+  background-color: rgb(247 135 135 / 0.2);
+}
+
 .hover\:text-\[\#FFC803\]:hover {
   --tw-text-opacity: 1;
   color: rgb(255 200 3 / var(--tw-text-opacity));
@@ -1278,6 +1319,10 @@ body {
 .hover\:text-accent:hover {
   --tw-text-opacity: 1;
   color: rgb(75 225 244 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-75:hover {
+  opacity: 0.75;
 }
 
 @media (min-width: 768px) {

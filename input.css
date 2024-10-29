@@ -4,44 +4,39 @@
 
 @font-face {
     font-family: 'LoosWide';
-    src: url('/src/fonts/fonnts.com-Loos_Wide_Thin.woff2') format('woff2'),
-        url('/src/fonts/fonnts.com-Loos_Wide_Thin.woff') format('woff');
+    src: url('/src/fonts/fonnts.com-Loos_Wide_Thin.otf') format('opentype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'LoosWide';
-    src: url('/src/fonts/fonnts.com-Loos_Wide_Light.woff2') format('woff2'),
-        url('/src/fonts/fonnts.com-Loos_Wide_Light.woff') format('woff');
+    src: url('/src/fonts/fonnts.com-Loos_Wide_Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'LoosWide';
-    src: url('/src/fonts/fonnts.com-Loos_Wide_Regular.woff2') format('woff2'),
-        url('/src/fonts/fonnts.com-Loos_Wide_Regular.woff') format('woff');
+    src: url('/src/fonts/fonnts.com-Loos_Wide_Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'LoosWide';
-    src: url('/src/fonts/fonnts.com-Loos_Wide_Bold.woff2') format('woff2'),
-        url('/src/fonts/fonnts.com-Loos_Wide_Bold.woff') format('woff');
+    src: url('/src/fonts/fonnts.com-Loos_Wide_Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'LoosWide';
-    src: url('/src/fonts/fonnts.com-Loos_Wide_Black.woff2') format('woff2'),
-        url('/src/fonts/fonnts.com-Loos_Wide_Black.woff') format('woff');
+    src: url('/src/fonts/fonnts.com-Loos_Wide_Black.otf') format('opentype');
     font-weight: 900;
     font-style: normal;
 }
 
 body {
-    font-family: 'loosWide';
+    font-family: 'LoosWide';
 }

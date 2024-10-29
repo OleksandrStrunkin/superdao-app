@@ -360,32 +360,40 @@
             </ul>
         </section>
     </main>
-    <footer class="bg-[#121E28] flex flex-col items-center justify-center mb-8">
-        <a href="#" class="flex items-center">
+    <footer class="bg-[#121E28] flex flex-col items-center justify-center">
+        <a href="#" class="flex items-center my-8">
             <svg width="40" height="32">
                 <use xlink:href="./src/img/icons.svg#icon-logo"></use>
             </svg>
             <p class="font-semibold text-2xl">Superdao</p>
         </a>
         <nav>
-            <ul class="flex font-semibold justify-between w-52">
-                <li>Legal</li>
-                <li>About</li>
-                <li>Jobs</li>
+            <ul class="flex font-semibold justify-between w-52 mb-8">
+                <li class="hover:text-accent duration-300 cursor-pointer"><a>Legal</a></li>
+                <li class="hover:text-accent duration-300 cursor-pointer"><a>About</a></li>
+                <li class="hover:text-accent duration-300 cursor-pointer"><a>Jobs</a></li>
             </ul>
-            <ul class="flex gap-2">
-                <li><svg width="24" height="24">
+            <ul class="flex gap-5 mb-8">
+                <li class="p-2 rounded-full bg-[#77E6FF]/15 hover:bg-[#77E6FF]/20 cursor-pointer duration-300">
+                    <svg width="24" height="24" class="fill-transparent">
                     <use xlink:href="./src/img/icons.svg#icon-twitter"></use>
-                </svg></li>
-                <li><svg width="24" height="24">
-                    <use xlink:href="./src/img/icons.svg#icon-telegram"></use>
-                </svg></li>
-                <li><svg width="24" height="24">
+                </svg>
+                </li>
+                <li class="p-2 rounded-full bg-[#7795FF]/15 hover:bg-[#7795FF]/20 cursor-pointer duration-300">
+                    <svg width="24" height="24">
+                    <use xlink:href="./src/img/icons.svg#icon-teleg"></use>
+                </svg>
+                </li>
+                <li class="p-2 rounded-full bg-[#F78787]/15 hover:bg-[#F78787]/20 cursor-pointer duration-300">
+                    <svg width="24" height="24">
                     <use xlink:href="./src/img/icons.svg#icon-utube"></use>
-                </svg></li>
-                <li><svg width="24" height="24">
+                    </svg>
+                </li>
+                <li class="p-2 rounded-full bg-[#9277FF]/15 hover:bg-[#9277FF]/20 cursor-pointer duration-300">
+                    <svg width="24" height="24">
                     <use xlink:href="./src/img/icons.svg#icon-discord"></use>
-                </svg></li>
+                </svg>
+                </li>
             </ul>
         </nav>
     </footer>
