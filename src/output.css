@@ -1281,26 +1281,12 @@ body {
   content: var(--tw-content);
 }
 
-.hover\:bg-\[\#FFCF01\]\/30:hover {
-  background-color: rgb(255 207 1 / 0.3);
-}
-
-.hover\:bg-btnHov:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 168 0 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[\#77E6FF\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(119 230 255 / var(--tw-bg-opacity));
+.hover\:bg-\[\#7795FF\]\/20:hover {
+  background-color: rgb(119 149 255 / 0.2);
 }
 
 .hover\:bg-\[\#77E6FF\]\/20:hover {
   background-color: rgb(119 230 255 / 0.2);
-}
-
-.hover\:bg-\[\#7795FF\]\/20:hover {
-  background-color: rgb(119 149 255 / 0.2);
 }
 
 .hover\:bg-\[\#9277FF\]\/20:hover {
@@ -1311,6 +1297,15 @@ body {
   background-color: rgb(247 135 135 / 0.2);
 }
 
+.hover\:bg-\[\#FFCF01\]\/30:hover {
+  background-color: rgb(255 207 1 / 0.3);
+}
+
+.hover\:bg-btnHov:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 168 0 / var(--tw-bg-opacity));
+}
+
 .hover\:text-\[\#FFC803\]:hover {
   --tw-text-opacity: 1;
   color: rgb(255 200 3 / var(--tw-text-opacity));
@@ -1319,10 +1314,6 @@ body {
 .hover\:text-accent:hover {
   --tw-text-opacity: 1;
   color: rgb(75 225 244 / var(--tw-text-opacity));
-}
-
-.hover\:opacity-75:hover {
-  opacity: 0.75;
 }
 
 @media (min-width: 768px) {
