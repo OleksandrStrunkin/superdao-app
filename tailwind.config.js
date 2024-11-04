@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}", "./index.html"],
   theme: {
     extend: {
+        fontFamily: {
+          loos: ['LoosWide', 'sans-serif'],
+          montserrat: ['Montserrat', 'sans-serif']
+        },
       colors: {
         primary: "#0a1117",
         btn: "#ffcf01",

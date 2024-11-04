@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="./src/output.css" rel="stylesheet">
     <title>Superdao</title>
 </head>
 
-<body class="bg-primary text-white">
+<body class="bg-primary text-white font-montserrat">
     <header class="flex container px-4 items-center mx-auto justify-between py-10">
         <a href="#" class="flex items-center">
             <svg width="40" height="32">
                 <use xlink:href="./src/img/icons.svg#icon-logo"></use>
             </svg>
-            <p class="font-semibold text-2xl">Superdao</p>
+            <p class="font-semibold text-2xl loosFont">Superdao</p>
         </a>
         <nav>
-            <ul class="gap-6 font-semibold text-xl hidden md:flex">
+            <ul class="gap-6 font-semibold text-sm lg:text-2xl hidden md:flex">
                 <li class="hover:text-accent duration-300"><a href="">Product</a></li>
                 <li class="hover:text-accent duration-300"><a href="">Use cases</a></li>
                 <li class="hover:text-accent duration-300"><a href="">Learn</a></li>
@@ -25,37 +26,52 @@
                 <li class="hover:text-accent duration-300"><a href="">Jobs</a></li>
             </ul>
         </nav>
-        <button class="bg-[#243241] py-2 px-5 rounded-lg">Login</button>
+        <button class="bg-[#243241] text-xs py-2 px-5 rounded-lg">Login</button>
     </header>
 
     <main class="container mx-auto px-4 flex flex-col gap-20">
         <section class="flex flex-col items-center justify-center">
-            <h1 class="flex text-center font-bold text-4xl md:text-5xl mt-48 max-w-[320px] mb-5">The easiest
-                way to start a DAO</h1>
-            <p class="text-center font-medium text-lg lg:text-2xl max-w-[500px] mb-11">
+            <h1
+                class="flex text-center font-bold text-4xl md:text-[52px] md:leading-none mt-48 w-[320px] md:w-[454px] lg:text-[72px] lg:w-[642px] mb-5 loosFont">
+                The easiest way to start a DAO
+            </h1>
+            <p class="text-center font-medium text-lg lg:text-2xl max-w-[500px] lg:max-w-[650px] mb-11">
                 An all-in-one platform to start, manage and grow a decentralized autonomous organization
             </p>
-            <button class="text-black font-bold py-2 px-7 bg-btn hover:bg-btnHov duration-300 rounded-xl">Get
-                started</button>
-            <p class="hidden md:flex">Icon</p>
+            <button class="text-black font-bold py-2 px-7 bg-btn hover:bg-btnHov duration-300 rounded-xl mb-0 md:mb-28">
+                Get started
+            </button>
+            <p class="hidden md:flex">
+                <svg width="24" height="25" class="">
+                    <use xlink:href="./src/img/icons.svg#icon-arowHero"></use>
+                </svg>
+            </p>
         </section>
         <section class="flex flex-col items-center justify-center">
-            <h2 class="flex flex-col items-center text-center font-bold text-3xl md:text-5xl">
+            <h2 class="flex flex-col items-center text-center font-bold text-3xl md:hidden loosFont">
                 <span class="flex relative">
                     <svg width="38" height="38" class="absolute -top-[50%] right-[120%]">
                         <use xlink:href="./src/img/icons.svg#icon-Group-5604"></use>
                     </svg>
                     Ready
                 </span>
-                for every project
+                <span>for every project</span>
             </h2>
-            <ul class="flex gap-3 flex-wrap items-center my-6 justify-center font-semibold">
+            <h2 class="items-center text-center font-bold text-4xl hidden md:block mb-11 loosFont">
+                <span class="flex relative">
+                    <svg width="60" height="60" class="absolute -top-[50%] right-[105%]">
+                        <use xlink:href="./src/img/icons.svg#icon-Group-5604"></use>
+                    </svg>
+                    Ready for every project
+                </span>
+            </h2>
+            <ul class="flex gap-3 flex-wrap items-center mb-6 justify-center font-semibold">
                 <li class="py-3 px-4 rounded-full bg-[#182632] text-[#ffb4d3]">Investment DAO</li>
                 <li class="py-3 px-4 rounded-full bg-[#182632] text-[#ffc24c]">Startup DAO</li>
                 <li class="py-3 px-4 rounded-full bg-[#182632] text-[#d387f7]">Service DAO</li>
                 <li class="py-3 px-4 rounded-full bg-[#182632] text-[#77e6ff]">Community DAO</li>
                 <li class="py-3 px-4 rounded-full bg-[#182632] text-[#23c9de]">Impact DAO</li>
-                <li class="py-3 px-4 rounded-full bg-[#182632] text-[#ffb4d3]">DeFi DAO</li>
+                <li class="py-3 px-4 rounded-full bg-[#182632] text-[#FF9E9E]">DeFi DAO</li>
                 <li class="py-3 px-4 rounded-full bg-[#182632] text-[#707f8d] flex gap-1 items-center">
                     <svg width="13" height="12" class="fill-blue-200">
                         <use xlink:href="./src/img/icons.svg#icon-btn"></use>
@@ -251,42 +267,54 @@
                 <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#0A0F1A] to-transparent z-10"></div>
                 <div class="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#0A0F1A] to-transparent z-10"></div>
                 <ul class="flex justify-center gap-6 overflow-x-auto scrollbar-hide px-16 mb-5">
-                    <li class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
+                    <li
+                        class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
                         <img src="./src/img/backed/Group%202039.svg" alt="">
                     </li>
-                    <li class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
+                    <li
+                        class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
                         <img src="./src/img/backed/wordmark-white.svg" alt="">
                     </li>
-                    <li class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
+                    <li
+                        class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
                         <img src="./src/img/backed/222%201.svg" alt="">
                     </li>
-                    <li class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
+                    <li
+                        class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
                         <img src="./src/img/backed/Vector.svg" alt="">
                     </li>
-                    <li class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
+                    <li
+                        class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
                         <img src="./src/img/backed/Frame%205610.svg" alt="">
                     </li>
-                    <li class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
+                    <li
+                        class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
                         <img src="./src/img/backed/Group%205575.svg" alt="">
                     </li>
                 </ul>
                 <ul class="flex justify-center gap-6 overflow-x-auto scrollbar-hide px-16">
-                    <li class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
+                    <li
+                        class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
                         <img src="./src/img/backed/nav_logo.svg" alt="">
                     </li>
-                    <li class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
+                    <li
+                        class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
                         <img src="./src/img/backed/circle%204.svg" alt="">
                     </li>
-                    <li class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
+                    <li
+                        class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
                         <img src="./src/img/backed/VS-Logo%20-%20Orange-300dpi%201.svg" alt="">
                     </li>
-                    <li class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
+                    <li
+                        class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
                         <img src="./src/img/backed/PL-logo-vertical-2lines-white.svg" alt="">
                     </li>
-                    <li class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
+                    <li
+                        class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
                         <img src="./src/img/backed/norwest_one-word%202.svg" alt="">
                     </li>
-                    <li class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
+                    <li
+                        class="py-4 px-6 bg-[#121E28] text-white border-2 border-[#2A3744] rounded-lg min-w-[120px] text-center font-medium hover:scale-105 transition-transform">
                         <img src="./src/img/backed/Logo_fund_3.svg" alt="">
                     </li>
                 </ul>
@@ -388,7 +416,7 @@
                 <li>
                     <a href="" class="flex items-center gap-2 bg-[#E2C1F9] p-2 rounded-md">
                         <span class="p-3 bg-black/10 rounded-sm">
-                                <svg width="24" height="24" class="">
+                            <svg width="24" height="24" class="">
                                 <use xlink:href="./src/img/icons.svg#icon-email"></use>
                             </svg>
                         </span>
@@ -417,23 +445,23 @@
             <ul class="flex gap-5 mb-8">
                 <li class="p-2 rounded-full bg-[#77E6FF]/15 hover:bg-[#77E6FF]/20 cursor-pointer duration-300">
                     <svg width="24" height="24" class="fill-transparent">
-                    <use xlink:href="./src/img/icons.svg#icon-twitter"></use>
-                </svg>
+                        <use xlink:href="./src/img/icons.svg#icon-twitter"></use>
+                    </svg>
                 </li>
                 <li class="p-2 rounded-full bg-[#7795FF]/15 hover:bg-[#7795FF]/20 cursor-pointer duration-300">
                     <svg width="24" height="24">
-                    <use xlink:href="./src/img/icons.svg#icon-teleg"></use>
-                </svg>
+                        <use xlink:href="./src/img/icons.svg#icon-teleg"></use>
+                    </svg>
                 </li>
                 <li class="p-2 rounded-full bg-[#F78787]/15 hover:bg-[#F78787]/20 cursor-pointer duration-300">
                     <svg width="24" height="24">
-                    <use xlink:href="./src/img/icons.svg#icon-utube"></use>
+                        <use xlink:href="./src/img/icons.svg#icon-utube"></use>
                     </svg>
                 </li>
                 <li class="p-2 rounded-full bg-[#9277FF]/15 hover:bg-[#9277FF]/20 cursor-pointer duration-300">
                     <svg width="24" height="24">
-                    <use xlink:href="./src/img/icons.svg#icon-discord"></use>
-                </svg>
+                        <use xlink:href="./src/img/icons.svg#icon-discord"></use>
+                    </svg>
                 </li>
             </ul>
         </nav>
