@@ -10,25 +10,50 @@
 </head>
 
 <body class="bg-primary text-white font-montserrat">
-    <header class="flex container px-4 items-center mx-auto justify-between py-10">
-        <a href="#" class="flex items-center">
-            <svg width="40" height="32">
-                <use xlink:href="./src/img/icons.svg#icon-logo"></use>
-            </svg>
-            <p class="font-semibold text-2xl loosFont">Superdao</p>
-        </a>
-        <nav>
-            <ul class="gap-6 font-semibold text-sm lg:text-2xl hidden md:flex">
-                <li class="hover:text-accent duration-300"><a href="">Product</a></li>
-                <li class="hover:text-accent duration-300"><a href="">Use cases</a></li>
-                <li class="hover:text-accent duration-300"><a href="">Learn</a></li>
-                <li class="hover:text-accent duration-300"><a href="">About</a></li>
-                <li class="hover:text-accent duration-300"><a href="">Jobs</a></li>
-            </ul>
-        </nav>
-        <button class="bg-[#243241] text-xs py-2 px-5 rounded-lg">Login</button>
+    <header class="bg-primary py-6 px-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <svg width="40" height="32">
+                    <use xlink:href="./src/img/icons.svg#icon-logo"></use>
+                </svg>
+                <span class="text-white font-loos text-2xl font-semibold">Superdao</span>
+            </a>
+    
+            <nav class="hidden md:flex items-center gap-8">
+                <ul class="flex gap-8 text-white font-montserrat">
+                    <li><a href="#" class="hover:text-accent duration-300">Product</a></li>
+                    <li><a href="#" class="hover:text-accent duration-300">Use cases</a></li>
+                    <li><a href="#" class="hover:text-accent duration-300">Learn</a></li>
+                    <li><a href="#" class="hover:text-accent duration-300">About</a></li>
+                    <li><a href="#" class="hover:text-accent duration-300">Jobs</a></li>
+                </ul>
+                <button class="bg-[#243241] text-white py-2 px-6 rounded-lg ml-4">Login</button>
+            </nav>
+    
+            <button id="burger-btn" class="md:hidden text-white p-2">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
     </header>
-
+    
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-primary z-[100] flex flex-col items-center justify-center space-y-8 text-2xl text-white transition-transform duration-300 translate-x-full md:hidden">
+        <button id="close-btn" class="absolute top-8 right-8 text-white">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    
+        <a href="#" class="font-loos hover:text-accent transition">Product</a>
+        <a href="#" class="font-loos hover:text-accent transition">Use cases</a>
+        <a href="#" class="font-loos hover:text-accent transition">Learn</a>
+        <a href="#" class="font-loos hover:text-accent transition">About</a>
+        <a href="#" class="font-loos hover:text-accent transition">Jobs</a>
+    
+        <button class="bg-btn text-primary px-10 py-4 rounded-xl font-bold font-montserrat mt-4">Get started</button>
+    </div>
     <main class="container mx-auto px-4 flex flex-col gap-20">
         <section class="flex flex-col items-center justify-center">
             <h1
@@ -505,6 +530,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="./src/script.js"></script>
 </body>
 
 </html>

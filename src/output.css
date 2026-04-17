@@ -588,12 +588,20 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
 }
 
 .inset-y-0 {
@@ -633,6 +641,10 @@ video {
   right: 0px;
 }
 
+.right-8 {
+  right: 2rem;
+}
+
 .right-\[100\%\] {
   right: 100%;
 }
@@ -645,8 +657,16 @@ video {
   right: 120%;
 }
 
+.top-8 {
+  top: 2rem;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-\[100\] {
+  z-index: 100;
 }
 
 .mx-auto {
@@ -695,6 +715,14 @@ video {
   margin-bottom: 2rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-48 {
   margin-top: 12rem;
 }
@@ -716,8 +744,20 @@ video {
   height: 2.5rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
 .h-\[328px\] {
   height: 328px;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-16 {
@@ -726,6 +766,10 @@ video {
 
 .w-52 {
   width: 13rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-\[180px\] {
@@ -740,16 +784,8 @@ video {
   width: 100%;
 }
 
-.w-\[360px\] {
-  width: 360px;
-}
-
 .min-w-\[120px\] {
   min-width: 120px;
-}
-
-.max-w-\[360px\] {
-  max-width: 360px;
 }
 
 .max-w-\[500px\] {
@@ -758,6 +794,11 @@ video {
 
 .grow {
   flex-grow: 1;
+}
+
+.translate-x-full {
+  --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -818,6 +859,16 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1079,11 +1130,6 @@ video {
   padding-right: 1rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1092,11 +1138,6 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .py-2 {
@@ -1112,6 +1153,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-\[10px\] {
@@ -1137,6 +1183,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.font-loos {
+  font-family: LoosWide, sans-serif;
 }
 
 .font-montserrat {
@@ -1183,11 +1233,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .font-bold {
@@ -1291,6 +1336,11 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(10 17 23 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1304,6 +1354,14 @@ video {
 .placeholder-\[\#3D4C5B\]::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(61 76 91 / var(--tw-placeholder-opacity));
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition-transform {
@@ -1376,7 +1434,7 @@ video {
 }
 
 .loosFont {
-  font-family: 'LoosWide';
+  font-family: 'LoosWide', serif;
 }
 
 .after\:mx-2::after {
@@ -1453,6 +1511,14 @@ video {
     display: none;
   }
 
+  .md\:w-\[167px\] {
+    width: 167px;
+  }
+
+  .md\:w-\[230px\] {
+    width: 230px;
+  }
+
   .md\:w-\[454px\] {
     width: 454px;
   }
@@ -1463,14 +1529,6 @@ video {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-\[230\] {
-    width: 230;
-  }
-
-  .md\:w-\[230px\] {
-    width: 230px;
   }
 
   .md\:grid-cols-6 {
@@ -1523,16 +1581,12 @@ video {
     height: auto;
   }
 
-  .lg\:w-\[1140px\] {
-    width: 1140px;
+  .lg\:w-\[360px\] {
+    width: 360px;
   }
 
   .lg\:w-\[642px\] {
     width: 642px;
-  }
-
-  .lg\:w-\[360px\] {
-    width: 360px;
   }
 
   .lg\:max-w-\[650px\] {
