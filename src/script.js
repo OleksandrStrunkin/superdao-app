@@ -4,13 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.getElementById("mobile-menu");
 
   if (burgerBtn && closeBtn && mobileMenu) {
-    // Відкрити
     burgerBtn.addEventListener("click", () => {
       mobileMenu.classList.remove("translate-x-full");
-      document.body.classList.add("overflow-hidden"); // Заборона скролу фону
+      document.body.classList.add("overflow-hidden");
     });
-
-    // Закрити
     const closeMenu = () => {
       mobileMenu.classList.add("translate-x-full");
       document.body.classList.remove("overflow-hidden");
@@ -18,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     closeBtn.addEventListener("click", closeMenu);
 
-    // Закривати при кліку на будь-яке посилання
     const links = mobileMenu.querySelectorAll("a");
     links.forEach((link) => link.addEventListener("click", closeMenu));
   }
