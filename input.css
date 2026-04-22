@@ -152,4 +152,34 @@
         font-size: clamp(1.25rem, 3vw, 1.5rem);
         line-height: 1.25;
     }
+
+    .section-deco-wrap {
+        position: relative;
+        display: inline-flex;
+        align-items: flex-start;
+    }
+
+    .section-deco-left {
+        position: absolute;
+        right: 100%;
+        top: 0;
+        transform: translate(-0.4rem, -45%);
+    }
+
+    .section-deco-right {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        transform: translate(0.4rem, -45%);
+    }
+
+    @media (min-width: 768px) {
+        .section-deco-left {
+            transform: translate(-0.6rem, -50%);
+        }
+
+        .section-deco-right {
+            transform: translate(0.6rem, -50%);
+        }
+    }
 }
