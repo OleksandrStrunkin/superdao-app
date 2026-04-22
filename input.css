@@ -40,3 +40,116 @@
 .loosFont {
     font-family: 'LoosWide', serif;
 }
+
+@layer utilities {
+    .bg-header-login { background-color: #243241; }
+    .bg-chip { background-color: #182632; }
+    .bg-launch-badge { background-color: #ffa800; }
+    .bg-surface-strong { background-color: #2A3744; }
+    .bg-icon-yellow { background-color: #FFCC4A; }
+    .bg-icon-cyan { background-color: #4ACEF7; }
+    .bg-icon-blue { background-color: #2081E2; }
+    .bg-input-dark { background-color: #121E28; }
+    .bg-press-cyan { background-color: #77E6FF; }
+    .bg-press-purple { background-color: #E2C1F9; }
+    .bg-press-lime { background-color: #DBE268; }
+    .bg-cta-yellow { background-color: #FFC803; }
+
+    .text-chip-pink { color: #ffb4d3; }
+    .text-chip-yellow { color: #ffc24c; }
+    .text-chip-purple { color: #d387f7; }
+    .text-chip-cyan { color: #77e6ff; }
+    .text-chip-teal { color: #23c9de; }
+    .text-chip-salmon { color: #FF9E9E; }
+    .text-chip-muted { color: #707f8d; }
+    .text-journey-muted { color: #37424D; }
+    .text-tools-muted { color: #8395A7; }
+    .text-watch-video { color: #FFCF01; }
+    .text-news-muted { color: #9AAFC3; }
+    .text-ink-dark { color: #10151A; }
+    .text-podcast-muted { color: rgb(226 226 226 / 0.8); }
+    .text-idea-muted { color: #5A6C7E; }
+    .text-telegram-dark { color: #4D3705; }
+    .text-email-dark { color: #40354B; }
+
+    .hover-text-tools:hover { color: #FFC803; }
+
+    .bg-watch-video-soft { background-color: rgb(255 207 1 / 0.15); }
+    .bg-watch-video-soft:hover { background-color: rgb(255 207 1 / 0.3); }
+
+    .stroke-star-cyan { stroke: #4BE1F4; }
+    .fill-star-cyan { fill: #4BE1F4; }
+    .stroke-star-purple { stroke: #A36FFE; }
+    .fill-star-purple { fill: #A36FFE; }
+    .stroke-star-lime { stroke: #C8D316; }
+    .fill-star-lime { fill: #C8D316; }
+    .stroke-star-orange { stroke: #FF8135; }
+    .fill-star-orange { fill: #FF8135; }
+
+    .border-input-muted { border-color: #3D4C5B; }
+    .text-input-muted { color: #3D4C5B; }
+    .placeholder-input-muted::placeholder { color: #3D4C5B; }
+
+    .from-dark-gradient { --tw-gradient-from: #0A0F1A var(--tw-gradient-from-position); --tw-gradient-to: rgb(10 15 26 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+    .border-surface-strong { border-color: #2A3744; }
+    .hover-border-surface-strong-soft:hover { border-color: rgb(42 55 68 / 0.5); }
+
+    .bg-social-cyan-soft { background-color: rgb(119 230 255 / 0.15); }
+    .bg-social-cyan-soft:hover { background-color: rgb(119 230 255 / 0.2); }
+    .bg-social-blue-soft { background-color: rgb(119 149 255 / 0.15); }
+    .bg-social-blue-soft:hover { background-color: rgb(119 149 255 / 0.2); }
+    .bg-social-red-soft { background-color: rgb(247 135 135 / 0.15); }
+    .bg-social-red-soft:hover { background-color: rgb(247 135 135 / 0.2); }
+    .bg-social-purple-soft { background-color: rgb(146 119 255 / 0.15); }
+    .bg-social-purple-soft:hover { background-color: rgb(146 119 255 / 0.2); }
+
+    .text-display-hero {
+        font-size: clamp(2.25rem, 6vw, 4.5rem);
+        line-height: 1.05;
+    }
+
+    .text-heading-xl {
+        font-size: clamp(2rem, 5vw, 3.75rem);
+        line-height: 1.1;
+    }
+
+    .text-heading-lg {
+        font-size: clamp(1.75rem, 4vw, 3rem);
+        line-height: 1.15;
+    }
+
+    .text-heading-md {
+        font-size: clamp(1.5rem, 3vw, 2.25rem);
+        line-height: 1.2;
+    }
+
+    .text-title-lg {
+        font-size: clamp(1.125rem, 2vw, 1.5rem);
+        line-height: 1.3;
+    }
+
+    .text-body-lg {
+        font-size: clamp(1rem, 1.7vw, 1.5rem);
+        line-height: 1.45;
+    }
+
+    .text-body-md {
+        font-size: clamp(0.95rem, 1.2vw, 1.125rem);
+        line-height: 1.45;
+    }
+
+    .text-caption {
+        font-size: clamp(0.8125rem, 1vw, 0.9375rem);
+        line-height: 1.4;
+    }
+
+    .text-logo {
+        font-size: clamp(1.25rem, 2.2vw, 1.5rem);
+        line-height: 1.2;
+    }
+
+    .text-nav-mobile {
+        font-size: clamp(1.25rem, 3vw, 1.5rem);
+        line-height: 1.25;
+    }
+}
